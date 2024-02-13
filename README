@@ -1,0 +1,114 @@
+Nume: Samson Alexandru-Valentin
+Grupă: 312CC
+
+
+Tema 2
+
+Descriere:
+
+
+Problema 1
+
+Timp: 8 ore
+
+Explicație: Pentru aceasă problemă am folosit 4 funcții, prima pentru citire,
+a doua pentru despărțire în cuvinte, a treia pentru verificarea simplă și a
+patra pentru verificarea dublă.
+
+Funcția de citire ia liniile și le introduce într-o matrice.
+
+Funcția de despărțire ia cuvintele din linii și le salvează în altă matrice.
+
+Funcția de verificare simplă parcurge cuvintele cheie și le compară cu
+cuvântul curent pentru a verifica dacă trebuie sau nu subliniat, formând un
+nou vector care este completat cu _ acolo unde erau original cuvinte cheie și
+cu spații acolo unde erau cuvinte normale.
+
+Funcția de verificare dublă funcționează după același principiu, doar că
+verifică și pentru secvențele de cuvinte cheie, completând într-un vector nou
+cu _ de la primul cuvânt până la al doilea, sau cu spații acolo unde nu este
+o secvență.
+
+În funcția main se citesc datele de intrare, se parcurg liniile despărțindu-se
+în cuvinte și se verifică pentru fiecare cuvânt mai întâi simplu, salvând-use
+linia highlight-ată în copia 1, iar apoi dublu, salvându-se linia highlight
+-ată în copia2. La final se reunesc cele două copii pentru a reda highlight
+-urile și este afișată reuniunea lor.
+
+ 
+
+Problema 2
+
+Timp: 7 ore
+
+Explicație: Pentru această problemă am folosit 6 funcții, prima pentru
+citire, a doua pentru căutare, a treia pentru a verifica dacă trebuie
+căutat, a patra pentru adăugare de cuvânt, a cincea pentru a verifica
+existența, iar a șasea pentru a găsi cuvântul potrivit din dicționar.
+
+Funcția de citire citește fiecare cuvânt.
+
+Funcția de căutare parcurge dicționarul pentru a verifica dacă cuvântul
+aparține măcar unui cuvânt din dicționar.
+
+Funcția de verificare vede dacă cuvântul este sau nu un semn de punctuație.
+
+Funcția de adăugare cuvânt adaugă un cuvânt nou în dicționar.
+
+Funcția de existență verifică dacă cuvântul apare deja în dicționar în forma
+sa, și dacă apare deja îi crește prioritatea.
+
+Funcția de potrivire parcurge dicționarul pentru a găsi cel mai potrivit
+cuvânt.
+
+În funcția main se citesc datele de intrare, se parcurg cuvintele introduse de
+utilizator și în funcție de forma lor sunt apelate funcțiile corespunzătoare.
+Se verifică dacă au * la final, dacă sunt semne de punctuație, dacă corespund
+unui cuvânt din dicționar etc și pentru fiecare cuvânt ori este afișat
+cuvântul în sine, ori cel mai potrivit cuvânt din dicționar.
+
+
+
+Problema 3
+
+Timp: 6 ore
+
+Explicație: Pentru această problemă am folosit 6 funcții, prima pentru
+transformare din baza 2 în baza 10, a doua pentru transformare din baza 10
+în baza 2, a treia pentru adunare, a patra pentru interschimbare, a cincea
+pentru rotație și a șasea pentru sau exclusiv.
+
+Funcția de transformare în baza 10 ia numărul în baza 2, parcurge cifrele de
+la cap la coadă și adună 2 la puterea poziției pe care se află.
+
+Funcția de transformare în baza 2 ia numărul în baza 10 și salvează resturile
+împărțirii la 2, pe care apoi le ia invers.
+
+Funcția de adunare se folosește de xor pentru a vedea suma biților și de and
+pentru a vedea dacă bitul următor trebuie mărit, până când bitul următor nu
+mai trebuie mărit. În final se face and cu 15 pentru a păstra doar 4 biți
+
+Funcția de interschimbare calculează mai întâi pozițile biților ce trebuie
+interschimbați, apoi verifică dacă sunt diferiți, caz în care se realizează
+interschimbarea folosindu-se de xor si or.
+
+Funcția de rotație vede de câte ori trebuie permutat numărul la stânga, iar
+apoi se folosește de or pentru a combina cele două porțiuni din numărul
+original. În final se face and cu 15 pentru a păstra doar 4 biți.
+
+Funcția de sau exclusiv se foloseșe de or și and negat, iar apoi de încă un
+and pentru a produce același efect.
+
+În funcția main se citesc datele de intrare, se salvează numerele și
+operațiile în baza 2, iar apoi se parcurg numerele, fiind aplicate operațiile
+pe parcurs numerelor în baza 10. În final se afișează numărul rezultat în urma
+tuturor operațiilor.
+
+
+
+Comentarii:
+
+În general cred că aș fi putut realiza o implementare mai bună a temei,
+dar timpul limitat m-a făcut să păstrez prima idee care mi-a venit și a
+funcționat. Din realizarea temei pot spune că am învățat despre structuri,
+cum funcționează operatorii pe biți și cum să folosesc pointeri la funcții.
